@@ -1,13 +1,15 @@
-import './components/NavBar'
+import {NavBar} from './component/navBar/NavBar'
+import { ItemListContainer} from "./component/itemListContainer/ItemListContainer";
 import logo from './logo.svg';
 import './App.css';
-import { MiMenu } from './components/NavBar';
 
 function App() {
   return (
     <div className="App">
-      <MiMenu />
-      <header className="App-header">
+      <NavBar />
+      <ItemListContainer greeting="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam at vel mollitia totam, ullam iusto qui tempora quam facere. Neque blanditiis, doloremque soluta libero ab similique quis nisi dolorem ipsum?"/>
+
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -20,7 +22,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
