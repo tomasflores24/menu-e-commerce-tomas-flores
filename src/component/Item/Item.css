@@ -1,0 +1,34 @@
+.figura{
+    background-color: lightslategrey;
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    margin: 50px;
+}
+.figura:hover{
+    /* color: #D6D58E; */
+    outline: 3px solid #D6D58E;
+
+}
+.header-titulo{
+    font-size: x-large;
+    margin: 7px 0 7px 0;
+}
+.header-titulo:hover{
+    color: #D6D58E;
+}
+
+.descripcion-figura{
+    margin: 3px 0 15px 0;
+}
+
+.detalle-producto{
+    margin: 15px 0 5px 0;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    background-color: lightsteelblue;
+}
+.detalle-producto:hover{
+    background-color: lightslategrey;
+}

@@ -1,0 +1,34 @@
+.header{
+    background-color: #025951;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .titulo{
+    text-align: center;
+    width: 70px;
+    margin: 0;
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+  input{
+    background-color: lightgray;
+    width: 325px;
+  }
+  input:hover{
+    background-color: white;
+  }
+  i{
+    width: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+  
+  }
+  i:hover{
+    outline: 1px solid;
+  }
+  .titulo:hover{
+    outline: 1px solid;
+  }
+  
