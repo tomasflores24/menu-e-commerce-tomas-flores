@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {ItemCount} from "../ItemCount/ItemCount";
-import {ItemList} from "../ItemList/ItemList"
+import {ItemList} from "../ItemList/ItemList" 
 // import {CartWidget} from "../cartWidget/CartWidget"
 
 export function ItemListContainer () {
