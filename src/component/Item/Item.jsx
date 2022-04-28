@@ -1,8 +1,7 @@
 import React from 'react'
 import "../Item/Item.css"
 
-export function Item( {info} ) {
-    const [id,titulo,descripcion,price,pictureUrl,detalle] = [info.id,info.titulo, info.descripcion,info.price, info.pictureUrl, info.detalle];
+export function Item( {id,titulo,descripcion,price,pictureUrl,detalle} ) {
 
     return (
             <figure key={id} className="figura">
