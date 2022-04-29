@@ -1,0 +1,20 @@
+.container-figure{
+    text-align: center;
+}
+.titulo-figura{
+    margin: 10px 0 20px 0;
+    border-bottom: 1px solid white;
+} 
+
+.descripcion-figura{
+    margin: 10px 20px 10px 20px;
+}
+.price-figura{
+    background-color: green;
+    width: 50px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px;
+    border: 1px solid white;
+}

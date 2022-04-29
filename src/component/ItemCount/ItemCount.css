@@ -2,19 +2,22 @@
     background-color: lightslategrey;
     border: 1px solid white;
     width: 350px;
-    margin: 30px auto 0 auto;
+    margin: 30px auto 0 auto; 
     display: flex;
     justify-content: space-between;
-  }
-  .boton{
+}
+.boton{
     margin: 10px;
     text-align: center;
     width: 50px;
-  }
-  .productos{
+}
+.productos{
     width: 20px;
     text-align: center;
-  }
-  .agregar{
+}
+.agregar{
     width: 80px;
-  }
+}
+.suma, .resta{
+    font-size: large;
+}
