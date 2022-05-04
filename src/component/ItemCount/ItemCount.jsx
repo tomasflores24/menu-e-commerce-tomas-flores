@@ -12,7 +12,11 @@ export function ItemCount ({stock, initial, onAdd}) {
         if(count > initial) setCount(count - 1);
     }
     const Agregar = () => {
-        if(count != 0 ) console.log("Agregaste "+count+" productos al carrito");
+        if(count != 0 ) {
+            console.log("Agregaste "+ count +" productos al carrito");
+            // alert("Agregaste "+ count +" productos al carrito");
+            setCount(initial);
+        }
     }
 
     return (

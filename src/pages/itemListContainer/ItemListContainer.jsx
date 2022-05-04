@@ -1,22 +1,21 @@
 import React, { useEffect, useState } from "react";
-import {ItemCount} from "../ItemCount/ItemCount";
-import {ItemList} from "../ItemList/ItemList";
+import {ItemList} from "../../component/ItemList/ItemList.jsx"
 import {GetProductos} from "../../GetItem/asyncMock.jsx"
-import axios from "axios";
+import { useParams } from "react-router-dom";
 
 export function ItemListContainer () {
-    
     const [products, setProducts] = useState([]);
-    
+    const {categoryId} = useParams();
+
     useEffect ( () => {
-        GetProductos()
-        .then(productos => setProducts(productos));    
-    } , []);
+        GetProductos(categoryId)
+        .then(productos => setProducts(productos));
+
+    } , [categoryId]);
     
     return (
         <>
             <ItemList productos={products}/>
-            <ItemCount stock={5} initial={0}/>
         </>
 )
 }

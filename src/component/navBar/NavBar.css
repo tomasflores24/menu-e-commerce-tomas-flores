@@ -2,7 +2,7 @@
     background-color: #025951;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
   }
   .titulo{
     text-align: center;
@@ -11,13 +11,23 @@
     margin-left: 15px;
     margin-right: 10px;
   }
-  input{
-    background-color: lightgray;
-    width: 325px;
+  
+  .header a {
+    text-decoration: none;
+    color : white;
+    cursor: pointer;
   }
-  input:hover{
-    background-color: white;
+
+  .nav-active{
+    font-weight: bold;
   }
+
+  .header a:hover{
+    border-bottom: 1px solid;
+    border-bottom: 1px solid;
+  }
+  
+
   i{
     width: 50px;
     margin-left: 15px;
@@ -26,9 +36,7 @@
   
   }
   i:hover{
-    outline: 1px solid;
+    border-bottom: 1px solid;
   }
-  .titulo:hover{
-    outline: 1px solid;
-  }
+
   

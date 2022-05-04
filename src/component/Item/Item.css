@@ -3,7 +3,7 @@
     display: inline-block;
     width: 300px;
     text-align: center;
-    margin: 50px;
+    margin: 50px 100px 30px 100px;
 }
 .figura:hover{
     /* color: #D6D58E; */
@@ -14,21 +14,11 @@
     font-size: x-large;
     margin: 7px 0 7px 0;
 }
-.header-titulo:hover{
-    color: #D6D58E;
-}
 
 .descripcion-figura{
     margin: 3px 0 15px 0;
 }
 
-.detalle-producto{
-    margin: 15px 0 5px 0;
-    text-decoration: none;
-    color: white;
-    border: 2px solid white;
-    background-color: lightsteelblue;
-}
 .detalle-producto:hover{
     background-color: lightslategrey;
 }

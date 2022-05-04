@@ -1,13 +1,19 @@
 .container-figure{
     text-align: center;
+    background-color: lightslategray;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    outline: 1px solid ;
 }
 .titulo-figura{
     margin: 10px 0 20px 0;
     border-bottom: 1px solid white;
+    font-size: x-large;
 } 
 
 .descripcion-figura{
-    margin: 10px 20px 10px 20px;
+    margin: 25px 20px 30px 20px;
 }
 .price-figura{
     background-color: green;
