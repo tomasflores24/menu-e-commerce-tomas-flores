@@ -13,14 +13,14 @@
 } 
 
 .descripcion-figura{
-    margin: 25px 20px 30px 20px;
+    margin: 25px 20px 10px 20px;
 }
 .price-figura{
     background-color: green;
     width: 50px;
     text-align: center;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 10px auto 15px auto;
     border-radius: 20px;
     border: 1px solid white;
+    
 }

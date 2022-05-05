@@ -11,7 +11,7 @@ export function Item( {id,titulo,descripcion,price,pictureUrl,detalle,categoria}
                     <figcaption className='descripcion-figura'>{descripcion}</figcaption>
                     <Link to={`/item/${id}`} className='detalle-producto'><button>{detalle}</button></Link>
                 </div>
-                <footer className='footer-figura'><p>Stock</p></footer>
+                <footer className='footer-figura'><p>Con Stock</p></footer>
             </div>
     );
 }
