@@ -5,7 +5,7 @@ El usuario puede agregar productos al carrito, navegar entre ellos, tanto por id
 [![list.png](https://i.postimg.cc/65Fbb2Y3/list.png)](https://postimg.cc/8jBbj58Q)
 
 # Detail
-[![list.png](https://i.postimg.cc/65Fbb2Y3/list.png)](https://postimg.cc/8jBbj58Q)
+[![detail.png](https://i.postimg.cc/76PKJgYB/detail.png)](https://postimg.cc/p97fg5j8)
 
 
 # Navegavilidad y Componentes
