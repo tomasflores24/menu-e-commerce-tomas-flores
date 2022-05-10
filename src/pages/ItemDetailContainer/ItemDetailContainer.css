@@ -5,3 +5,11 @@
     text-align: center;
     margin: 100px auto auto auto;
 }
+.loading-detail{
+    color: black;
+    width: 150px;
+    margin: auto;
+    padding: 200px 10px 10px 10px;
+    font-size: xx-large;
+    text-decoration: underline;
+}

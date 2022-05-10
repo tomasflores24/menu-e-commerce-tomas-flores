@@ -9,6 +9,5 @@ export function CartWidget () {
         <i>
             <FontAwesomeIcon icon={faCartShopping} />
         </i>
-
     );
 }

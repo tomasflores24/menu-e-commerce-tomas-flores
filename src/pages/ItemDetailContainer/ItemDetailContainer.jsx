@@ -6,19 +6,22 @@ import { useParams } from 'react-router-dom';
 
 
 export function ItemDetailContainer() {
+    const [loadingDetail, setLoadingDetail] = useState(true);
     const [UnProducto, setUnProducto] = useState([]);
     const { id } = useParams();
 
 
     useEffect(()=>{
-        console.log(id);
         GetProducto(id)
-        .then(producto => setUnProducto(producto));
+        .then(producto => {
+          setUnProducto(producto);
+          setLoadingDetail(false);
+        });
     },[id]);
-     
+    
   return (
     <div className='ItemDetailContainer'>
-        <ItemDetail {...UnProducto} />
+        {(loadingDetail) ? <h1 className='loading-detail'>Loading...</h1> : <ItemDetail {...UnProducto}/>}
     </div>
   )
 }

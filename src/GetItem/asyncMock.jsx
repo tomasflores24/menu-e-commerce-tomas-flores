@@ -17,7 +17,7 @@ export function GetProductos (category) {
     const MyPromise = new Promise ( (resolve, reject) => {
         setTimeout(() => {
             resolve((category) ? productosPedidos.filter( p => p.categoria === category) : productosPedidos);
-        }, 500);
+        }, 1500);
     } );
     return MyPromise;
 }
