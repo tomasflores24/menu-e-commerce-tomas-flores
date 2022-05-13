@@ -12,7 +12,6 @@ const productosPedidos = [
     {id: 10,titulo: "Animales", descripcion: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur nobis laborum obcaecati similique animales...", price: 500, pictureUrl: "https://placeimg.com/250/250/animals/2",detalle:"Ver Detalle Del Producto", categoria: "animales"}
 ];
 
-
 export function GetProductos (category) {
     const MyPromise = new Promise ( (resolve, reject) => {
         setTimeout(() => {
