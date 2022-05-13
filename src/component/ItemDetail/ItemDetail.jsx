@@ -23,7 +23,7 @@ export function ItemDetail({item}) {
 
         {(cantidadDeProductos) === null
          ? <ItemCount stock={5} initial={1} onAdd={AddHandler}/> 
-         : <Link to="/otraCart"><button className="terminar-compra">Terminar Compra</button></Link>}
+         : <Link to="/cart"><button className="terminar-compra">Terminar Compra</button></Link>}
     </div>
   )
 }

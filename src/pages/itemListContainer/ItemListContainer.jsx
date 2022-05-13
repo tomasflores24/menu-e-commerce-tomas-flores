@@ -3,7 +3,7 @@ import {ItemList} from "../../component/ItemList/ItemList.jsx"
 import {GetProductos} from "../../GetItem/asyncMock.jsx"
 import { useParams } from "react-router-dom";
 import "../itemListContainer/ItemListContainer.css"
-import CartContext from "../../store/cart-context.js";
+// import CartContext from "../../store/cart-context.js";
 
 export function ItemListContainer () {
     const [loadingList, setLoadingList] = useState(true);
