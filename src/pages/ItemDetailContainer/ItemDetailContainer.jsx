@@ -21,10 +21,7 @@ export function ItemDetailContainer() {
     
   return (
     <div className='ItemDetailContainer'>
-        {/* {(loadingDetail) ? <h1 className='loading-detail'>Loading...</h1> : <ItemDetail {...UnProducto}/>} */}
-
         {(loadingDetail) ? <h1 className='loading-detail'>Loading...</h1> : <ItemDetail item={UnProducto}/>}
-
     </div>
   )
 }

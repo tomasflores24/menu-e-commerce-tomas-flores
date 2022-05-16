@@ -1,0 +1,11 @@
+.cart-container {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    display: inline-block;
+}
+.general{
+    font-size: x-large;
+}
+.txt-decoration{
+    font-weight: bold;
+}

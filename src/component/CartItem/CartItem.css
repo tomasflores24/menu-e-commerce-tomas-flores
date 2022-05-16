@@ -1,0 +1,12 @@
+.un-item{
+    /* background-color: #f08080; */
+    width: 400px;
+    text-align: center;
+    border: 1px solid;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.titulo-item{
+    text-decoration: underline;
+}
+
