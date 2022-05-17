@@ -8,7 +8,11 @@ import {useCartContext} from "../../store/cart-context"
 export function CartWidget () {
 
     const {productList} = useCartContext();
-
+    let quantityTotal = 0;
+    productList.forEach(item => {
+        quantityTotal = quantityTotal + item.quantity;
+    });
+    console.log(quantityTotal);
     return (
         <>
             <i>
@@ -16,11 +20,8 @@ export function CartWidget () {
                     <FontAwesomeIcon icon={faCartShopping} />
                 </NavLink>
             </i>
-            {productList.length !== 0 && <p className='numero-carrito'>{productList.length}</p>}
-            {/* {productList.length !== 0
-            ? <p className='numero-carrito'>{productList.length}</p>
-            : <p className='numero-carrito'>0</p>
-            } */}
+            {/* {productList.length !== 0 && <p className='numero-carrito'>{productList.length}</p>} */}
+            {productList.length !== 0 && <p className='numero-carrito'>{quantityTotal}</p>}
         </>
     );
 }

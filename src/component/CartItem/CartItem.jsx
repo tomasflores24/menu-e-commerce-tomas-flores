@@ -5,7 +5,6 @@ import "../CartItem/CartItem.css"
 export function CartItem({item}) {
   const {deleteByID, removeOneUnit, unitsPerProducts} = useCartContext();
   
-  console.log(unitsPerProducts(item.id), "Unidad");
   return (
     <div className="un-item">
         <h1 className='titulo-item'>{item.titulo}</h1>
