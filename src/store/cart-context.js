@@ -12,18 +12,7 @@ export function CartContextProvider ( {children} ) {
 
 
     const addToCart = (item, quantity) => {
-        /*if(isInCart(item.id)){
-            return setProductList(
-                productList.map(product => 
-                product.id === item.id
-                ? {...product, quantity : product.quantity + quantity}
-                : product
-                ));
-
-        }*/
-        
         setProductList([...productList, {...item, quantity}]);
-
         if(isInCart(item.id)){
             const productListAux= productList.map(product => {
               if(product.id === item.id){
@@ -35,7 +24,7 @@ export function CartContextProvider ( {children} ) {
         }else{
             setProductList([...productList, {...item, quantity}]);
         }
-    }// Add To Cart
+    }
 
     const emptyCart = () => {
         setProductList([]);
@@ -45,9 +34,25 @@ export function CartContextProvider ( {children} ) {
         setProductList(productList.filter( item => item.id !== id));
     }
 
-    const totalCount = () => productList.reduce( (total, item) => total + item.quantity , 0); 
+    const unitsPerProducts = (id) => {
+        const foundInCart = productList.find((item) => item.id === id);
+        return foundInCart ? foundInCart.quantity : 0;
+    }
 
-    // const totalPrice = () => productList.reduce( (total, item) =>  total + item.quantity * item.price , 0);
+    const removeOneUnit = (id) => {
+        if (unitsPerProducts(id) === 1) {
+          return deleteByID(id);
+        }
+        setProductList(
+          productList.map((product) =>
+            product.  id === id
+              ? { ...product, quantity: product.quantity - 1 }
+              : product
+          )
+        );
+      };
+    
+    const totalCount = () => productList.reduce( (total, item) => total + item.quantity , 0); 
 
     const totalPrice = () => {
         let total = 0;
@@ -57,7 +62,7 @@ export function CartContextProvider ( {children} ) {
         return total;
     }
 
-    const unitsPerProducts = (id) => productList.find(item => item.id === id).quantity
+
 
     return(
         <cartContext.Provider 
@@ -68,7 +73,9 @@ export function CartContextProvider ( {children} ) {
             deleteByID,
             totalCount,
             totalPrice,
-            unitsPerProducts}}>
+            removeOneUnit,
+            unitsPerProducts
+            }}>
             {children}
         </cartContext.Provider>
     );

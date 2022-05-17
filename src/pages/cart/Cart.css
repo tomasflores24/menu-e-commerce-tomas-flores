@@ -1,11 +1,14 @@
 .cart-container {
-    /* display: flex; */
-    /* justify-content: space-between; */
     display: inline-block;
 }
 .general{
     font-size: x-large;
+    display: block;
+    margin-top: 30px;
 }
 .txt-decoration{
     font-weight: bold;
+}
+.link-pagar{
+    text-decoration: none;
 }
