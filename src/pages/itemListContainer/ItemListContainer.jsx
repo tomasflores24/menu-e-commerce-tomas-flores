@@ -20,7 +20,7 @@ export function ItemListContainer () {
 
     return (
         <>
-            {(loadingList) ? <p className="loadind-list">LoadingList...</p> : <ItemList productos={products}/>}
+            {(loadingList) ? <p className="loadind-list">LoadingList...</p> : <ItemList productos={products}/>}  
         </>
 )
 }
