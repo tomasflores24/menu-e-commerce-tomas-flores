@@ -12,3 +12,18 @@
 .link-pagar{
     text-decoration: none;
 }
+
+.carrito-vacio{
+    text-align: center;
+    font-size: xx-large;
+    background-color: lightslategray;
+    width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 25px;
+}
+.inicio{
+    text-decoration: none;
+    margin: 10px;
+    font-size: medium;
+}

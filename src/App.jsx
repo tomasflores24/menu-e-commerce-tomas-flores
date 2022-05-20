@@ -21,4 +21,3 @@ function App() {
 }
 
 export default App;
-// Main 21.37

@@ -17,7 +17,11 @@ export const Cart = () => {
             <Link to="/pagar" className='link-pagar'><button className="general">Ir a Pagar</button></Link>
           </>
           )
-        : <p>No hay Productos en el carrito</p>
+        : ( <>
+              <p className='carrito-vacio'>Tu Carrito esta vacio</p>
+              <button className='inicio'><Link to="/" className='inicio'>Ir al Inicio</Link></button>
+            </>
+          )
       }
     </div>
   )

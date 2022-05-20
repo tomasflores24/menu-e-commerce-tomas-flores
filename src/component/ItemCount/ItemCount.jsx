@@ -10,13 +10,7 @@ export function ItemCount ({stock, initial, onAdd}) {
     const Resta = () => {
         if(count > initial) setCount(count - 1);
     }
-    // const Agregar = () => {
-    //     if(count != 0 ) {
-    //         console.log("Agregaste "+ count +" productos al carrito");
-    //         setCount(initial);
-    //     }
-    // }
-    let name = "ola";
+    
     return (
         <div className="contador">
              <button onClick={Resta} className="boton resta">-</button>

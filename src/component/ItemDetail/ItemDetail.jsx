@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom';
 import { useCartContext } from '../../store/cart-context';
 
 export function ItemDetail({item}) {
-  // console.log(item, typeof item);
-
   const [cantidadDeProductos, setCantidadDeProductos] = useState(null);
   const {addToCart} = useCartContext();
 
@@ -17,7 +15,7 @@ export function ItemDetail({item}) {
 
   return (
     <div className='container-figure'>
-        <div className="titulo-figura">{item.titulo}</div>
+        <div className="titulo-figura">{item.title}</div>
         <img src={item.pictureUrl} alt="imagen-figura" />
         <div className='descripcion-figura'>{item.descripcion}</div>
         <div className="price-figura">{item.price}$</div>

@@ -15,7 +15,7 @@ export function CartContextProvider ( {children} ) {
         setProductList([...productList, {...item, quantity}]);
         if(isInCart(item.id)){
             const productListAux= productList.map(product => {
-              if(product.id === item.id){
+              if(product.id === item.id && product.quantity < 5){
                 product.quantity = product.quantity + quantity;
               }
               return product;
@@ -80,18 +80,6 @@ export function CartContextProvider ( {children} ) {
         </cartContext.Provider>
     );
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

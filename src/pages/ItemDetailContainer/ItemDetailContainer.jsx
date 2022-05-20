@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { GetProducto } from '../../GetItem/asyncMock';
 import {ItemDetail} from '../../component/ItemDetail/ItemDetail';
 import "./ItemDetailContainer.css";
 import { useParams } from 'react-router-dom';
+import { getDocs, getFirestore, collection} from 'firebase/firestore'
+// import { GetProducto } from '../../GetItem/fireStore';
 
 
 export function ItemDetailContainer() {
@@ -10,13 +11,20 @@ export function ItemDetailContainer() {
     const [UnProducto, setUnProducto] = useState([]);
     const { id } = useParams();
 
-
     useEffect(()=>{
-        GetProducto(id)
-        .then(producto => {
-          setUnProducto(producto);
-          setLoadingDetail(false);
-        });
+        const db = getFirestore();
+        const itemCollection = collection(db, "items");
+        getDocs(itemCollection)
+         .then(snapshot => {
+            snapshot.forEach(doc => {
+              if(doc.id === id){
+                setUnProducto({...doc.data(), id: doc.id});
+              }
+            });
+            setLoadingDetail(false);
+         })
+         .catch(err => console.log(err));
+         
     },[id]);
     
   return (
