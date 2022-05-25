@@ -14,7 +14,8 @@ export const Cart = () => {
         ? (<>
             <p className='general'>Total Price: <span className='txt-decoration'>{totalPrice()}</span></p>
             <button className='general' onClick={() => emptyCart()}>Clear</button>
-            <Link to="/pagar" className='link-pagar'><button className="general">Ir a Pagar</button></Link>
+
+            <Link to="/checkout" className='link-pagar'><button className="general">Finalizar Compra</button></Link>
           </>
           )
         : ( <>

@@ -17,7 +17,6 @@ export function ItemCount ({stock, initial, onAdd}) {
              <h3 className="productos">{count}</h3>
              <button onClick={Suma} className="boton suma">+</button>
              <button onClick={() => onAdd(count)} className="boton agregar">Agregar al Carrito</button>
-
         </div>
     )
 }

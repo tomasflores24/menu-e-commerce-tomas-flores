@@ -1,0 +1,22 @@
+.container-finalizar-compra{
+    margin-top: 20px;
+    background-color: lightslategrey;
+    padding-bottom: 15px;
+    border: 1px solid;
+    text-align: center;
+}
+
+label{
+    margin-top: 15px;
+    display: block;
+}
+
+.title{
+    text-decoration: underline;
+}
+.fin-compra{
+    margin-top: 25px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}

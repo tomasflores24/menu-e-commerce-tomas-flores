@@ -21,7 +21,7 @@ export function ItemDetail({item}) {
         <div className="price-figura">{item.price}$</div>
 
         {(cantidadDeProductos) === null
-         ? <ItemCount stock={5} initial={1} onAdd={AddHandler}/> 
+         ? <ItemCount stock={item.stock} initial={1} onAdd={AddHandler}/> 
          : <Link to="/cart"><button className="terminar-compra">Terminar Compra</button></Link>}
     </div>
   )

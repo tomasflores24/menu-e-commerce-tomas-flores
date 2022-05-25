@@ -12,7 +12,6 @@ export function CartWidget () {
     productList.forEach(item => {
         quantityTotal = quantityTotal + item.quantity;
     });
-    console.log(quantityTotal);
     return (
         <>
             <i>
