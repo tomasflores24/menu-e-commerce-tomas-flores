@@ -4,24 +4,28 @@
     width: 325px;
     text-align: center;
     margin: 50px 100px 30px 100px;
-    border-radius: 20px;
+    border-radius: 25px;
 }
+
 .figura:hover{
     outline: 3px solid #D6D58E;
-    box-shadow: 12px 10px 15px #333;
+    box-shadow: 0px 0px 20px 10px #333;
 }
 .header-titulo{
     font-size: x-large;
-    margin: 7px 0 7px 0;
+    margin: 7px 0 20px 0;
 }
 
 .descripcion-figura{
     margin: 3px 0 15px 0;
 }
 
-/* .detalle-producto:hover{
-    background-color: lightslategrey;
-} */
+.img-figura{
+    outline: 1.4px solid black;
+    border-radius: 15px;
+    box-shadow: 0px 1px 8px 1px black;
+}
+
 .boton-agregar{
     margin-top: 10px;
     margin-bottom: 5px;
@@ -31,5 +35,12 @@
 
 }
 .boton-agregar:hover{
-    box-shadow: 1px 3px 6px #333;
+    box-shadow: 0 0 3px 2px #333;
+}
+.btn-detalle{
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.btn-detalle:hover{
+    box-shadow: 0 0 3px 1px black;
 }

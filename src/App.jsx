@@ -8,7 +8,6 @@ import { Checkout } from './component/Checkout/Checkout';
 
 function App() {
   return (
-
     <div className="App">
         <NavBar />
         <Routes>
@@ -21,6 +20,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;

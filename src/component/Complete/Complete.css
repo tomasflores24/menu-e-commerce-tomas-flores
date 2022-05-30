@@ -1,0 +1,25 @@
+.container-inicio{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    outline: 5px solid greenyellow;
+    width: 500px;
+    height: 150px;
+
+}
+
+.txt-inicio{
+    font-size: xx-large;
+}
+.id-order{
+    font-weight: bold;
+    font-size: large;
+}
+
+.link-inicio{
+    text-decoration: none;
+}
+.btn-inicio-chck{
+    font-size: large;
+}

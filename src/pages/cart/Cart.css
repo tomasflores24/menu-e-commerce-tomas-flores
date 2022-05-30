@@ -1,9 +1,12 @@
 .cart-container {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
 }
-.general{
+
+
+
+.general{ 
     font-size: x-large;
-    display: block;
     margin-top: 30px;
 }
 .txt-decoration{
@@ -22,8 +25,29 @@
     margin-left: auto;
     border-radius: 25px;
 }
-.inicio{
+.div-btn{
+    text-align: center;
+}
+.btn-inicio{
+    font-size: large;
+    border-radius: 5px;
+}
+.inicio-link{
     text-decoration: none;
-    margin: 10px;
-    font-size: medium;
+}
+.total{
+    text-align: center;
+}
+.btns{
+    text-align: center;
+    background-color: lightslategrey;
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 20px;
+    border-radius: 55px;
+}
+.btn{
+    margin: 20px 50px 0 50px;
+    border-radius: 100px;
 }

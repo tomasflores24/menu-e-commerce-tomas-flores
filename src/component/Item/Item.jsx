@@ -10,9 +10,9 @@ export function Item( {item} ) {
                 <header className='header-titulo'>{item.title}</header>
                 <div className='img-txt'>
                     <img src={item.pictureUrl} alt={item.title} className="img-figura" />
-                    <figcaption className='price-figura'>{item.price}</figcaption>
+                    <figcaption className='price-figura'>{item.price}$</figcaption>
                     <Link to={`/item/${item.id}`} className='detalle-producto'>
-                        <button>Ver Detalle</button>
+                        <button className='btn-detalle'>Ver Detalle</button>
                     </Link>
                 </div>
                 <footer><button className='boton-agregar' onClick={() => addToCart(item, 1)}> + </button></footer>

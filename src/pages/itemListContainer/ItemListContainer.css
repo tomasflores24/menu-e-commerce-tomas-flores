@@ -1,6 +1,12 @@
 .loadind-list{
     font-size: xx-large;
     width: 250px;
-    margin: auto;
+    height: 50px;
+    text-align: center;
+    margin: 150px auto 0 auto;
     color: black;
-}
+    background-color: lightblue;
+    border-radius: 100px;
+    box-shadow: 0 0 15px 1px;
+    
+} 

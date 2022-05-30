@@ -4,7 +4,9 @@
     display: inline-block;
     width: 100%;
     height: 100%;
-    outline: 1px solid ;
+    outline: 1px solid;
+    box-shadow: 0px 0px 20px 3px black;
+    border-radius: 5px;
 }
 .titulo-figura{
     margin: 10px 0 20px 0;
@@ -17,14 +19,20 @@
 }
 .price-figura{
     background-color: green;
-    width: 50px;
+    width: 65px;
     text-align: center;
     margin: 10px auto 15px auto;
     border-radius: 20px;
-    border: 1px solid white;
-    
+    border: 1px solid white;   
+}
+
+.imagen-figura{
+    border-radius: 10px;
+    outline: 1px solid black;
+    box-shadow: 0 0 7px 1px black;
 }
 
 .terminar-compra{
+    margin-top: 15px;
     font-size: large;
 }

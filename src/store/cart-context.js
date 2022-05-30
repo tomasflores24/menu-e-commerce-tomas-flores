@@ -49,7 +49,7 @@ export function CartContextProvider ( {children} ) {
         );
       };
     
-    const totalCount = () => productList.reduce( (total, item) => total + item.quantity , 0); 
+    const totalCount = () => productList.reduce( (total, item) => total + item.quantity , 0);
 
     const totalPrice = () => {
         let total = 0;
@@ -58,8 +58,6 @@ export function CartContextProvider ( {children} ) {
         }
         return total;
     }
-
-
 
     return(
         <cartContext.Provider 

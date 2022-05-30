@@ -1,6 +1,6 @@
 .contador{
     border: 1px solid white;
-    margin: 0px auto 10px auto;
+    margin: 20px 0 0px 0;
     display: flex;
     justify-content: space-between;
 }

@@ -1,11 +1,11 @@
 .numero-carrito{
+    font-size: x-small;
     position: absolute;
     right: 52px;
-    top: -15.9px;
+    top: -6px;
     color: white;
     text-align: center;
     background-color: lightslategrey;
-    width: 15px;
-    height: 21px;
+    width: 20px;
     border-radius: 500px;
 }

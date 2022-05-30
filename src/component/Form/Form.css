@@ -1,15 +1,20 @@
 .container-finalizar-compra{
-    margin-top: 20px;
+    margin-top: 20px; 
     background-color: lightslategrey;
     padding-bottom: 15px;
     border: 1px solid;
     text-align: center;
+    width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: x-large;
+    margin-top: 80px;
 }
 
 label{
     margin-top: 15px;
     display: block;
-}
+} 
 
 .title{
     text-decoration: underline;
@@ -20,3 +25,4 @@ label{
     margin-right: auto;
     margin-left: auto;
 }
+
