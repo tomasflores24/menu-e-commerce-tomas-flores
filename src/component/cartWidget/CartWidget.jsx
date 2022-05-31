@@ -15,7 +15,7 @@ export function CartWidget () {
     return (
         <>
             <i>
-                <NavLink to="cart" className={nav => nav.isActive ? "nav-active" : ""}>
+                <NavLink to="cart" className={nav => nav.isActive ? "nav-active" : "tr"}>
                     <FontAwesomeIcon icon={faCartShopping} />
                 </NavLink>
             </i>

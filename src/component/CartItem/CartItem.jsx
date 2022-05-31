@@ -9,7 +9,7 @@ export function CartItem({item}) {
     <div className="un-item">
         <h1 className='titulo-item'>{item.title}</h1>
         <p>Quantity: <span className="txt-decoration">{item.quantity}</span></p>
-        <p>Total: <span className="txt-decoration">{item.price * item.quantity}</span></p>
+        <p>Total: <span className="txt-decoration">{item.price * item.quantity}$</span></p>
         <button onClick={() => removeOneUnit(item.id)}>delete a single product</button>
         <button onClick={() => deleteByID(item.id)}>remove all products</button>
     </div>

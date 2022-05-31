@@ -8,7 +8,7 @@ export function Complete({idOrder}) {
         <h3 className='txt-inicio'>Compra Finalizada</h3>
         <p>Tu ID: <span className='id-order'>{idOrder}</span></p>
         <button className='btn-inicio-chck'>
-            <Link to="/" className='link-inicio'>INICIO</Link>
+            <Link to="/" className='link-inicio'>VOLVER AL INICIO</Link>
         </button>
     </div>
   )
