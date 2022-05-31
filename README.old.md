@@ -1,15 +1,17 @@
 # menu-e-commerce-tomas-flores
-El usuario puede agregar productos al carrito, navegar entre ellos, tanto por id o por categorias.
+El usuario puede navegar entre productos, tanto por ID como por Categoria, Tambien puede agregar productos al Carro, Luego en el carro tiene la opcion de eliminar productos o la Opcion de COMPRAR que luego le pedira sus datos y los guardara en la FireStore junto a los productos que compro.
 
 # Gif
-[![Video.gif](https://i.postimg.cc/Gps14nt7/Video.gif)](https://postimg.cc/KKFWWVnB)
+[![video.gif](https://i.postimg.cc/vmKgrYvm/video.gif)](https://postimg.cc/d78VvKpM)
 
 # ItemListContainer
-[![list.png](https://i.postimg.cc/65Fbb2Y3/list.png)](https://postimg.cc/8jBbj58Q)
+[![item-list-container.png](https://i.postimg.cc/rp7sdh80/item-list-container.png)](https://postimg.cc/5HqbTSQb)
 
 # Detail
-[![detail.png](https://i.postimg.cc/76PKJgYB/detail.png)](https://postimg.cc/p97fg5j8)
+[![item-detail.png](https://i.postimg.cc/7Yq6TJyV/item-detail.png)](https://postimg.cc/mh6RvDkz)
 
+# Checkout 
+[![checkout.png](https://i.postimg.cc/j2tsNmB5/checkout.png)](https://postimg.cc/vg2FwqYF)
 
 # Navegavilidad y Componentes
 - PascalCase para Componentes.
